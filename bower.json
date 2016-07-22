@@ -9,7 +9,12 @@
 		"AdminLTE": "almasaeed2010/AdminLTE#master",
 		"knockoutjs": "latest",
 		"history.js": "latest",
-		"loaders.css": "latest"
+		"loaders.css": "latest",
+		"socket.io-client": "latest",
+		"perfect-scrollbar": "latest",
+		"d3": "latest",
+		"4gekkman-bower-animsition": "latest",
+		"momentjs": "latest"
 	},
   "mains": {
     "css": [
