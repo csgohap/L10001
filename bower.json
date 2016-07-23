@@ -2,7 +2,7 @@
   "name": "L10001",
   "dependencies": {
 		"4gekkman-bower-jslib1": "latest",
-		"font-awesome": "FortAwesome/Font-Awesome",
+		"Font-Awesome": "latest",
 		"ionicons": "latest",
 		"jquery": "~2.0",
 		"moment": "latest",
@@ -14,7 +14,7 @@
 		"perfect-scrollbar": "latest",
 		"d3": "latest",
 		"4gekkman-bower-animsition": "latest",
-		"momentjs": "latest"
+		"momentjs": "latest",
 	},
   "mains": {
     "css": [
