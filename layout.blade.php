@@ -51,6 +51,21 @@
 <!-------------------------------------------*/ ?>
 <body>
 
+  <?php /*------------------------>
+  <!-- Экран загрузки документа -->
+  <!--------------------------*/ ?>
+  <div class="start-loading-screen loader">
+    <div class="loader-inner ball-scale-ripple-multiple" style="position: absolute; top: 50%; left: 50%; transform: translateY(-100px) translateX(-100px); width: 200px; height: 200px;">
+      <div style="width: 200px; height: 200px; border-color: #f39c26; left: 0; top: 0;"></div>
+      <div style="width: 200px; height: 200px; left: 0; top: 0;"></div>
+      <div style="width: 200px; height: 200px; border-color: #f39c26; left: 0; top: 0;"></div>
+    </div>
+  </div>
+
+
+  <?php /*--------------->
+  <!-- Содержимое BODY -->
+  <!-----------------*/ ?>
   <div id="content" class="content">
     @yield('content')
   </div>
