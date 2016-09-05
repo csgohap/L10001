@@ -381,11 +381,30 @@ var LayoutModelProto = { constructor: function(LayoutModelFunctions) {
 		//-------------------------------------------------------------//
 		if(!ko.computedContext.isInitial()) return;
 
-		//-------------------------------------------------------------//
-		// X1.2. ... //
-		//-------------------------------------------------------------//
+		//--------------------------------------------------------------------//
+		// X1.2. Отключить экран загрузки документа после его полной загрузки //
+		//--------------------------------------------------------------------//
+		(function(){
 
-			// ... код ...
+			$(document).ready(function(){
+
+				// 1] Получить DOM-элемент экрана загрузки
+				var loading_screen = $('.start-loading-screen');
+
+				// 2] Сделать overflow: auto для body
+				$(document.body).css('overflow', 'auto');
+
+				// 3] За .5 секунды скрыть экран с помощью opacity
+				loading_screen.addClass('hide-start-loading-screen');
+
+				// 4] После скрытия экрана, сделать его display: none
+				setTimeout(function(){
+					loading_screen.addClass('displaynone');
+				}, 1000);
+
+			});
+
+		})();
 
 
 

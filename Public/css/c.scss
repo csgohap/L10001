@@ -6,6 +6,7 @@
 // Оглавление //
 //------------//
 
+  a. Экран загрузки документа
   1. ...
 
 
@@ -13,6 +14,26 @@
 // Стили //
 //-------*/
 
-// 1. ...
-
+//-----------------------------//
+// a. Экран загрузки документа //
+//-----------------------------//
+body {
+  overflow: hidden;
+}
+.start-loading-screen {
+  display: block;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: #293036;
+  z-index: 99999999;
+  opacity: 1;
+  transition: all 1s ease;
+}
+.start-loading-screen.hide-start-loading-screen {
+  opacity: 0;
+}
+.start-loading-screen.displaynone {
+  display: none;
+}
 
