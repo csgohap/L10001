@@ -15,7 +15,8 @@
 		"d3": "latest",
 		"4gekkman-bower-animsition": "latest",
 		"momentjs": "latest",
-		"mdi": "latest"
+		"mdi": "latest",
+		"beemuse": "latest"
 	},
   "mains": {
     "css": [
