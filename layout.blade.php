@@ -43,6 +43,96 @@
   <?php /*-- А2. Подключение локального CSS документа -->
   <!------------------------------------------------*/ ?>
   @yield('css')
+  <!-- Изменение keyframes для одной из анимаций loaders.css -->
+  <style>
+
+    .ball-scale-ripple-multiple>div {
+      border-width: 6px;
+    }
+
+    @-webkit-keyframes ball-scale-ripple-multiple {
+
+      0% {
+        opacity: 1;
+        -webkit-transform: scale(0.1);
+                transform: scale(0.1);
+      }
+
+      90% {
+        opacity: 0;
+        -webkit-transform: scale(.9);
+                transform: scale(1);
+      }
+
+      100% {
+        opacity: 0;
+        -webkit-transform: scale(1);
+                transform: scale(1);
+      }
+
+    }
+
+    @keyframes ball-scale-ripple-multiple {
+
+      0% {
+        opacity: 1;
+        -webkit-transform: scale(0.1);
+                transform: scale(0.1);
+      }
+
+      90% {
+        opacity: 0;
+        -webkit-transform: scale(.9);
+                transform: scale(1);
+      }
+
+      100% {
+        opacity: 0;
+        -webkit-transform: scale(1);
+                transform: scale(1);
+      }
+
+    }
+
+  </style>
+
+  <!-- Стили 2-го варианта загрузочного экрана-->
+  <style>
+    @-webkit-keyframes animIn {
+        0% {
+            -webkit-transform: translateX(-100px);
+            transform: translateX(-100px);
+            opacity: 0;
+        }
+        50% {
+            opacity: 1;
+        }
+        100% {
+            -webkit-transform: translateX(100px);
+            transform: translateX(100px);
+            opacity: 0;
+        }
+    }
+    @keyframes animIn {
+        0% {
+            -webkit-transform: translateX(-100px);
+            transform: translateX(-100px);
+            opacity: 0;
+        }
+        50% {
+            opacity: 1;
+        }
+        100% {
+            -webkit-transform: translateX(100px);
+            transform: translateX(100px);
+            opacity: 0;
+        }
+    }
+  </style>
+
+
+
+
 
 </head>
 
@@ -54,13 +144,21 @@
   <?php /*------------------------>
   <!-- Экран загрузки документа -->
   <!--------------------------*/ ?>
+<!--  <div class="start-loading-screen" style="z-index: 99999999;">-->
+<!--    <div class="loader">-->
+<!--      <div class="loader-inner ball-scale-ripple-multiple" style="position: absolute; top: 50%; left: 50%; transform: translateY(-100px) translateX(-100px); width: 200px; height: 200px;">-->
+<!--        <div style="width: 200px; height: 200px; border-color: #f39c26; left: 0; top: 0;"></div>-->
+<!--        <div style="width: 200px; height: 200px; left: 0; top: 0;"></div>-->
+<!--        <div style="width: 200px; height: 200px; border-color: #f39c26; left: 0; top: 0;"></div>-->
+<!--      </div>-->
+<!--    </div>-->
+<!--  </div>-->
   <div class="start-loading-screen" style="z-index: 99999999;">
-    <div class="loader">
-      <div class="loader-inner ball-scale-ripple-multiple" style="position: absolute; top: 50%; left: 50%; transform: translateY(-100px) translateX(-100px); width: 200px; height: 200px;">
-        <div style="width: 200px; height: 200px; border-color: #f39c26; left: 0; top: 0;"></div>
-        <div style="width: 200px; height: 200px; left: 0; top: 0;"></div>
-        <div style="width: 200px; height: 200px; border-color: #f39c26; left: 0; top: 0;"></div>
-      </div>
+    <div class='loading2'>
+      <div class='bullet'></div>
+      <div class='bullet'></div>
+      <div class='bullet'></div>
+      <div class='bullet'></div>
     </div>
   </div>
 
