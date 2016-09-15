@@ -130,6 +130,42 @@
     }
   </style>
 
+  <!-- Стили анимации загрузочной лошадки -->
+  <style>
+          /*-webkit-transform: rotate3d(0deg, 0deg, 120deg);*/
+              /*-ms-transform: rotate3d(0deg, 0deg, 120deg);*/
+                  /*transform: rotate3d(0deg, 0deg, 120deg);    */
+    @-webkit-keyframes loadhorse {
+        0% {
+          -webkit-transform: rotateX(140deg);
+          transform: rotateZ(140deg);
+        }
+        50% {
+          -webkit-transform: rotateX(110deg);
+          transform: rotateZ(110deg);
+        }
+        100% {
+          -webkit-transform: rotateX(140deg);
+          transform: rotateZ(140deg);
+        }
+    }
+    @keyframes loadhorse {
+        0% {
+          -webkit-transform: rotateX(140deg);
+          transform: rotateZ(140deg);
+        }
+        50% {
+          -webkit-transform: rotateX(110deg);
+          transform: rotateZ(110deg);
+        }
+        100% {
+          -webkit-transform: rotateX(140deg);
+          transform: rotateZ(140deg);
+        }
+    }
+
+  </style>
+
 
 
 
@@ -160,6 +196,7 @@
       <div class='bullet'></div>
       <div class='bullet'></div>
     </div>
+<!--    <img src="{!! asset('public/D10007/assets/Logo_load.gif') !!}">-->
   </div>
 
 
