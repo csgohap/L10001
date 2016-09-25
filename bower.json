@@ -16,7 +16,8 @@
 		"4gekkman-bower-animsition": "latest",
 		"momentjs": "latest",
 		"mdi": "latest",
-		"beemuse": "latest"
+		"beemuse": "latest",
+		"tooltipster": "latest"
 	},
   "mains": {
     "css": [
