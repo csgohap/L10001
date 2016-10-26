@@ -17,7 +17,8 @@
 		"momentjs": "latest",
 		"mdi": "latest",
 		"beemuse": "latest",
-		"tooltipster": "latest"
+		"tooltipster": "latest",
+		"smooth-scroll.js": "latest"
 	},
   "mains": {
     "css": [
