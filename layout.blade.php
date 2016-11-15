@@ -136,32 +136,53 @@
           /*-webkit-transform: rotate3d(0deg, 0deg, 120deg);*/
               /*-ms-transform: rotate3d(0deg, 0deg, 120deg);*/
                   /*transform: rotate3d(0deg, 0deg, 120deg);    */
+    /*@-webkit-keyframes loadhorse {*/
+        /*0% {*/
+          /*-webkit-transform: rotateX(140deg);*/
+          /*transform: rotateZ(140deg);*/
+        /*}*/
+        /*50% {*/
+          /*-webkit-transform: rotateX(110deg);*/
+          /*transform: rotateZ(110deg);*/
+        /*}*/
+        /*100% {*/
+          /*-webkit-transform: rotateX(140deg);*/
+          /*transform: rotateZ(140deg);*/
+        /*}*/
+    /*}*/
+    /*@keyframes loadhorse {*/
+        /*0% {*/
+          /*-webkit-transform: rotateX(140deg);*/
+          /*transform: rotateZ(140deg);*/
+        /*}*/
+        /*50% {*/
+          /*-webkit-transform: rotateX(110deg);*/
+          /*transform: rotateZ(110deg);*/
+        /*}*/
+        /*100% {*/
+          /*-webkit-transform: rotateX(140deg);*/
+          /*transform: rotateZ(140deg);*/
+        /*}*/
+    /*}*/
+
     @-webkit-keyframes loadhorse {
         0% {
-          -webkit-transform: rotateX(140deg);
-          transform: rotateZ(140deg);
-        }
-        50% {
-          -webkit-transform: rotateX(110deg);
-          transform: rotateZ(110deg);
+          -webkit-transform: rotateX(0deg);
+          transform: rotateZ(0deg);
         }
         100% {
-          -webkit-transform: rotateX(140deg);
-          transform: rotateZ(140deg);
+          -webkit-transform: rotateX(359deg);
+          transform: rotateZ(359deg);
         }
     }
     @keyframes loadhorse {
         0% {
-          -webkit-transform: rotateX(140deg);
-          transform: rotateZ(140deg);
-        }
-        50% {
-          -webkit-transform: rotateX(110deg);
-          transform: rotateZ(110deg);
+          -webkit-transform: rotateX(0deg);
+          transform: rotateZ(0deg);
         }
         100% {
-          -webkit-transform: rotateX(140deg);
-          transform: rotateZ(140deg);
+          -webkit-transform: rotateX(359deg);
+          transform: rotateZ(359deg);
         }
     }
 
@@ -188,12 +209,16 @@
 <!--    </div>-->
 <!--  </div>-->
   <div class="start-loading-screen" style="z-index: 99999999;">
-    <div class='loading2'>
-      <div class='bullet'></div>
-      <div class='bullet'></div>
-      <div class='bullet'></div>
-      <div class='bullet'></div>
-    </div>
+
+    <img src="{!! asset('public/D10007/assets/mainspinner.svg') !!}">
+
+
+<!--    <div class='loading2'>-->
+<!--      <div class='bullet'></div>-->
+<!--      <div class='bullet'></div>-->
+<!--      <div class='bullet'></div>-->
+<!--      <div class='bullet'></div>-->
+<!--    </div>-->
 <!--    <img src="{!! asset('public/D10007/assets/Logo_load.gif') !!}">-->
   </div>
 

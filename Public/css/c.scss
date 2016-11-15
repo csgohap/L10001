@@ -45,13 +45,23 @@ body {
 .start-loading-screen.displaynone {
   display: none;
 }
+//.start-loading-screen img {
+//  width: 300px;
+//  height: 300px;
+//  position: absolute;
+//  top: -120px;
+//  left: 20%;
+//  -webkit-animation: loadhorse 5s ease-in-out 0s infinite;
+//}
 .start-loading-screen img {
-  width: 300px;
-  height: 300px;
+  width: 200px;
+  height: 200px;
   position: absolute;
-  top: -120px;
-  left: 20%;
-  -webkit-animation: loadhorse 5s ease-in-out 0s infinite;
+  top: 50%;
+  margin-top: -100px;
+  left: 50%;
+  margin-left: -100px;
+  -webkit-animation: loadhorse 1s linear 0s infinite;
 }
 
 //--------------------------------//
