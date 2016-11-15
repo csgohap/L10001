@@ -397,9 +397,9 @@ var LayoutModelProto = { constructor: function(LayoutModelFunctions) {
 				// 3] За .5 секунды скрыть экран с помощью opacity
 				loading_screen.addClass('hide-start-loading-screen');
 
-				// 4] После скрытия экрана, сделать его display: none
+				// 4] После скрытия экрана, удалить его из DOM
 				setTimeout(function(){
-					loading_screen.addClass('displaynone');
+					loading_screen.remove();
 				}, 1000);
 
 			});
