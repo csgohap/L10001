@@ -2,11 +2,11 @@
   "name": "L10001",
   "dependencies": {
 		"4gekkman-bower-jslib1": "latest",
+		"bootstrap": "latest",
 		"Font-Awesome": "latest",
 		"ionicons": "latest",
 		"jquery": "~2.0",
 		"moment": "latest",
-		"AdminLTE": "almasaeed2010/AdminLTE#master",
 		"knockoutjs": "latest",
 		"history.js": "latest",
 		"loaders.css": "latest",
