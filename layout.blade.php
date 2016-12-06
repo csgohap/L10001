@@ -23,6 +23,7 @@
       В1. Принять данные для шаблона с сервера
       В2. Подключение JS-скрипта наследника шаблона
       В3. Подключение счётчика Яндекс.Метрики
+      В4. Подключение счётчика Google Analitycs
 
 ////==================================================== */?>
 
@@ -288,6 +289,22 @@
       })(document, window, "yandex_metrika_callbacks");
   </script>
   <noscript><div><img src="https://mc.yandex.ru/watch/41412929" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+
+  <?php /*----------------------------------------->
+  <!-- В4. Подключение счётчика Google Analitycs -->
+  <!-------------------------------------------*/ ?>
+  <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-88629903-1', 'auto');
+    ga('send', 'pageview');
+
+  </script>  
+
+
 
 
 
