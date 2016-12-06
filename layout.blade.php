@@ -302,7 +302,7 @@
     ga('create', 'UA-88629903-1', 'auto');
     ga('send', 'pageview');
 
-  </script>  
+  </script>
 
 
 
